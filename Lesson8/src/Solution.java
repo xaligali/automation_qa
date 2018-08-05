@@ -80,7 +80,7 @@ public class Solution {
                                         final double age_ = age_m;
 
                                         System.out.println("\nПо вашим критериям подходит(-ят) следующие(-ее) животные(-ое):");
-                                        //находим в списке рыжую собаку c помощью стрима
+                                        //находим в списке нужное животное c помощью стрима
                                         if ((type_m == 1) && (race_m == 1)) {
                                             animals.stream().filter(s -> s.type.contains("из семества кошачьих") && s.race.contains("женский") && s.color.contains(color_) && s.age_animal() == age_)
                                                     .forEach(s -> System.out.println(s));
