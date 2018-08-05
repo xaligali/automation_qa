@@ -3,10 +3,11 @@ public class Dog extends Animals{
     String home;
 
     Dog(String home) {this.home=home;}
-    Dog(String name, String home)
+    Dog(String name, String home) throws Exception_1
     {
         this.name=name;
         this.home=home;
+        if (home=="бездомная") throw new Exception_1(" cобака, это очень грустно", home);
     }
 
     //переопределяем методы класса-родителя Animals

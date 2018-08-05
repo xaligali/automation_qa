@@ -3,13 +3,18 @@ public class Cat extends Animals {
     String boss;
     String race;
     String address;
+    int age;
 
-    Cat(String name, String boss, String race, String address) {
+    Cat(String name, String boss, String race, String address, int age) throws Exception_1 {
         this.name = name;
         this.boss = boss;
         this.race = race;
         this.address = address;
+        this.age=age;
+        if (age <=0 || age >40 ) throw new Exception_1("Возраст кошки не может быть меньше 0 или больше 40");
     }
+
+
 
     //переопределяем методы класса-родителя Animals
     @Override
