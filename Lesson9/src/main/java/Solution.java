@@ -45,11 +45,9 @@ public class Solution {
                                 if (race_m == 1 || race_m == 2) {
                                     System.out.println("\nЦвет:");
                                     color_m = in.next();
-                                    final String color_ = color_m;
                                     System.out.println("\nВозраст(год/лет):");
                                     if (in.hasNextDouble()) { //проверка на ввод целого числа
                                         age_m = in.nextDouble();
-                                        final double age_ = age_m;
                                         sh.Shelter();
                                         sh.SearchPet(type_m, color_m, age_m, race_m);
                                     } else
